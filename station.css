@@ -1,0 +1,83 @@
+body{
+	margin:0;
+	padding:0;
+	background:url(one.jpg);
+	background-size:cover;
+	background-position:centre;
+	font-family:sans-serif;
+}
+
+.stationbox{
+    width:320px;
+	height:380px;
+	background:#191970;
+	color:#fff;
+	top:50%;
+	left:30%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	box-sizing: border-box;
+	padding:70px 30px;
+}
+
+
+h1{
+	margin:0;
+	padding:0 0 20 px;
+
+
+	text-align:center;
+	font-size:22px;
+}
+
+.stationbox p{
+	margin: 0;
+	padding:0;
+	font-weight:bold;
+}
+.stationbox input{
+	width:100%;
+	margin-bottom:20px;
+}
+
+
+.loginbox input[type="text"],input[type="password"]
+{
+	border:none;
+	border-bottom: 1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+}
+	
+.stationbox input[type="submit"]
+{
+	border:none;
+	outline:none;
+	height:30px;
+	background:#00bfff;
+	color:#fff;
+	font-size:18px;
+	border-radius:40px;
+}
+
+.stationbox input[type="submit"]:hover
+{
+	cursor:pointer;
+	background:#00bfff;
+	color:#000;
+}
+.stationbox a{
+	text-decoration:none;
+	font-size:12px;
+	line-height:20px;
+	color:darkgrey;
+}
+
+.stationboxbox a:hover
+{
+	color:#000;
+}
+

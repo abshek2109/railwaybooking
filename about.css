@@ -1,0 +1,16 @@
+body{
+	font-family: sans-serif;
+	background-color: #fff;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(a.jpg);
+	background-size: cover;
+
+}
+
+h1{
+	text-align: left;
+	color:#fff;
+	margin:30px 0 50px;
+}
+p{
+	color:#fff;
+}

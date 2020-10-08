@@ -1,0 +1,120 @@
+body{
+	margin:0;
+	padding:0;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(track9.jpg);
+	height:100vh;
+	background-size:cover;
+	background-position:centre;
+	font-family:serif;
+	background-attachment:fixed;
+}
+
+.passengerbox{
+	width:600px;
+	height:100px;
+	background: #ffffff00;
+	color:#fff;
+	top:0%;
+	left:3%;
+	position:absolute;
+	box-sizing: border-box;
+}
+
+
+
+
+h1{
+	margin:0;
+	padding:0 0 20 px;
+    text-align:center;
+	font-size:22px;
+}
+
+.passengerbox p{
+	     margin 0;
+	     padding:0;
+	     font-size: 90px
+	     font-weight: 800;
+	     top: 0;
+
+}
+
+.passengerbox input{
+	height:30px;
+	width:60%;
+	padding: 5px 10px;
+	font-size:16px;
+	border-radius:2px;
+	border: 1px solid gray;
+	margin-bottom:20px;
+}
+
+.passengerbox {
+	margin: 10px 0px 10px 0px;
+}
+
+.passengerbox input[type="text"]
+{
+	border:none;
+	border-bottom: 1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+}
+.passengerbox input[type="date"]
+{
+	border:none;
+	border-bottom: 1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+}
+
+.passengerbox input[type="number"]
+{
+	border:none;
+	border-bottom: 1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+}
+
+
+
+
+.passengerbox input[type="radio"]
+{
+	display :block;
+	content: "\2714"
+	border:0.1em;
+	border-radius: 0.2em;
+	display:inline-block;
+	width: 1em;
+	height:1em;
+	padding-left: 0.3em;
+	padding-right: 0.2em;
+	margin-right:0.2em;
+}
+
+
+.passengerbox input[type="submit"]
+{
+	background: #191970;
+	color:#fff;{
+	border:none;
+	border-bottom: 1px solid #fff;
+	background:transparent;
+	outline:none;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+}
+
+
+
