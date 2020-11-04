@@ -4,17 +4,11 @@ include("connection.php");
 	error_reporting(0);
 
 if (isset($_POST['submit1'])) 
-{   
-
-
+{
 
 	$frm = $_POST['from'];
 	$t = $_POST['to'];
 	$doj = $_POST['journey'];
-	
-
-
-   
 
 	if(($frm=="Davangere") && ($t=="Bengaluru"))
 	{
@@ -52,7 +46,6 @@ if (isset($_POST['submit1']))
 
 	else 
 		echo"From Station and To Station cannot be same";
-		
-	
+
 }
 ?>

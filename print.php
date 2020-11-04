@@ -7,19 +7,9 @@ $e = "SELECT * FROM passenger where train_no='$trai'";
 $d5 = mysqli_query($mysqli,$e);
 $r2= $d5->fetch_assoc();
 
-
-
-
-
 $a = "SELECT * FROM train where train_no='$trai'";
 $d1 = mysqli_query($mysqli,$a);
 $r3= $d1->fetch_assoc();
-
-
-
-
-
-
 
 ?>
 
@@ -41,8 +31,6 @@ $r3= $d1->fetch_assoc();
 		padding-top: 5px;
 		border:none;
 		padding: 5px;
-		
-
 		text-align: center;
 		background-color: red;
 	}

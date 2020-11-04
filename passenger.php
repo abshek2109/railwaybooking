@@ -12,31 +12,12 @@ if(isset($_POST['submit']))
   $age= $_POST['age'];
   $gender= $_POST['gender'];
   $pnumber= $_POST['pnumber'];
-  
-  
- 
-  
-  
 
   $sql =$mysqli->query("INSERT INTO `passenger`(`train_no`,`name`, `age`, `gender`, `cnumber`) VALUES ('$trai','$fullname','$age','$gender','$pnumber')");
- 
-   
-//$query = mysqli_query($mysqli, $sql);
-//$sql1="SELECT * FROM passenger where train_no=$trai";
-
-//$row5= mysqli_fetch_array($query);
-
-
 
   header("Location:payment.php?t=$trai");
-  
-
-
 }
-  ?>
-
-
-
+?>
 
 <!DOCTYPE html>
 <html>
@@ -176,10 +157,7 @@ span.price {
 
            <label for="number"> Contact Number</label>
             <input type="number" id="pnumber" name="pnumber" placeholder="Phone Number" required minlength="10" maxlength="10"><br><br>
-          </div>
-
-          
-              
+          </div>  
             </div>
           </div>
           

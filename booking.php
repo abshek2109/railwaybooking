@@ -15,21 +15,16 @@
 		
 		<h1>Book your Ticket</h1>
 		<form action="display.php" method="post">
-
-
 			<p>From</p>
 			<select name="from">
                   <option selected disabled>From</option>
                   <option value="Bengaluru">Bengaluru</option>
                   <option value="Davangere">Davangere</option>
                   <option value="Mysuru">Mysuru</option>
-	          
-		 
-                  </select><br><br><br>
+	        </select><br><br><br>
 
 		  <p>When do you want to Go?</p>
                   <input type="date" name="journey" placeholder="Date of Journey" required><br><br><br>
-
 
 			<p>To</p>
 			<select name="to">
@@ -37,17 +32,9 @@
                   <option value="Bengaluru">Bengaluru</option>
                   <option value="Davangere">Davangere</option>
                   <option value="Mysuru">Mysuru</option>
-	          
-		  
-                  </select><br><br><br> 
+            </select><br><br><br> 
 			<input type="submit" name="submit1" value= "Search" ><br>
 		</form>
-		
 	</div>
-
 </body>
 </html>
-
-
-
-

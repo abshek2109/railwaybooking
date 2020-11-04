@@ -3,8 +3,7 @@
   include("connection.php");
   include("session.php");
   error_reporting(0);
-
-$s = $_GET[t];
+  $s = $_GET[t];
 
 if(isset($_POST['submit']))
 {
@@ -14,9 +13,6 @@ if(isset($_POST['submit']))
    $emonth = $_POST['expmonth'];
    $eyear = $_POST['expyear'];
    $cvv = $_POST['cvv'];
-  
-  
-  
 
   $sql = $mysqli->query("INSERT INTO `payment` VALUES ('$tnumber','$cname','$cnumber','$emonth','$eyear','$cvv')");
 
@@ -24,9 +20,6 @@ if(isset($_POST['submit']))
 {
   header("Location:print.php?t=$tnumber");
 }
-
-  
-
 
 }
   ?>
@@ -199,22 +192,13 @@ span.price {
 </body>
 </html>
 
-
-
-
-
 <?php
-//    $no   = 1;
-//    $total  = 0;
-
 $sql="SELECT * FROM train where from1='$frm' and to1='$t'";
 
 $query = mysqli_query($mysqli, $sql);
     while ($row5= mysqli_fetch_array($query))
     {
-      //$amount  = $row5['amount'] == 0 ? '' : number_format($row5['amount']);
       
-
       echo '<tr>
 
                  <td>BOOK</a></td>

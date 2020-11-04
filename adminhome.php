@@ -3,11 +3,7 @@ include 'connection1.php';
 include('session.php');
 ?>
 
-
 <!DOCTYPE html>
-
-
-
 <html>
 <head>
 	<title>Admin</title>

@@ -15,12 +15,8 @@
 			<p>Password</p>
 			<input type="password" name="password" placeholder="Enter Password" required>
             <input type="submit" name="submit" value="login"><br>
-            <a href="log.php">User Login Here</a>
-          
-		    
-		</form>
-		
+            <a href="log.php">User Login Here</a>		    
+		</form>	
 	</div>
-
 </body>
 </html>

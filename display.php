@@ -2,25 +2,13 @@
 include('connection.php');
 include('session.php');
 
-
-
 $frm = $_POST['from'];
-	$t = $_POST['to'];
-	$doj = $_POST['journey'];
-
-	
+$t = $_POST['to'];
+$doj = $_POST['journey'];
 
 $sql="SELECT * FROM train where from1='$frm' and to1='$t'";
 
 $query = mysqli_query($mysqli, $sql);
-
-
-
-
-
-
-
-
 
 ?>
 <html>
@@ -141,12 +129,9 @@ $query = mysqli_query($mysqli, $sql);
 		</thead>
 		<tbody>
 		<?php
-//		$no 	= 1;
-//		$total 	= 0;
+
 		while ($row5= mysqli_fetch_array($query))
 		{
-			//$amount  = $row5['amount'] == 0 ? '' : number_format($row5['amount']);
-			
 
 			echo '<tr>
 					
@@ -155,11 +140,7 @@ $query = mysqli_query($mysqli, $sql);
 					<td>'.$row5['dep_time'].'</td>
 					<td>'.$row5['arrv_time'].'</td>
 					<td>'.$row5['fare'].'</td>
-					
-		
-                      
-
-                 <td><a href=passenger.php?train='.$row5['train_no'].' >BOOK</a></td>
+                 	<td><a href=passenger.php?train='.$row5['train_no'].' >BOOK</a></td>
  
 				</tr>';
 	

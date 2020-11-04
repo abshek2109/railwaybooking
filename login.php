@@ -49,13 +49,9 @@
 			<input type="text"name="username" placeholder="Enter UserName" required>
 			<p>password</p>
 			<input type="password" name="password" placeholder="enter password" required>
-            <input type="submit" name="submit" value="login"><br>
-          
+            <input type="submit" name="submit" value="login"><br> 
 		    <a href="registration2.html">Dont have an account?Sign Up</a>
-
-		</form>
-		
+		</form>		
 	</div>
-
 </body>
 </html>

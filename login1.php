@@ -22,7 +22,7 @@
 	if($count>0)  {
 
 		$_SESSION['login_user'] = $username;
-		header("Location : http://localhost/rails/homepage.php");
+		header("Location :homepage.php");
 		      
 		      }	
 	
@@ -30,7 +30,7 @@
 		echo"Enter the valid Username or Password";
 		echo $username;
 		echo $password;
-		header("Location : http://localhost/rails/log.php");
+		header("Location :log.php");
 	       }
 	}
 ?>
@@ -52,12 +52,8 @@
 			<p>password</p>
 			<input type="password" name="password" placeholder="enter password" required>
             <input type="submit" name="submit" value="login"><br>
-          
 		    <a href="registration2.html">Dont have an account?Sign Up</a>
-
-		</form>
-		
+		</form>		
 	</div>
-
 </body>
 </html>

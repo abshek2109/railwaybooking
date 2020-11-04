@@ -2,8 +2,6 @@
 include('connection.php');
 error_reporting(0);
 include('session.php');
-
-
 ?>
 <html>
 <head>
@@ -123,21 +121,13 @@ include('session.php');
 		</thead>
 		<tbody>
 		<?php
-//		$no 	= 1;
-//		$total 	= 0;
 
 		$sql="SELECT *  FROM train";
 
-$query = mysqli_query($mysqli, $sql);
-//$row5= $query->fetch_assoc();
-
-//echo '$row5[train_no]';
-
+		$query = mysqli_query($mysqli, $sql);
 
 		while ($row5= mysqli_fetch_array($query))
 		{
-			//$amount  = $row5['amount'] == 0 ? '' : number_format($row5['amount']);
-			
 
 			echo '<tr>
 					
@@ -146,15 +136,12 @@ $query = mysqli_query($mysqli, $sql);
 					<td>'.$row5['dep-time'].'</td>
 					<td>'.$row5['arrv_time'].'</td>
 					<td>'.$row5['fare'].'</td>
-					
-		
-                      
-
-                 <td><a href=delete1.php?train='.$row5['train_no'].' >Delete</a></td>
+                 	<td><a href=delete1.php?train='.$row5['train_no'].' >Delete</a></td>
  
-				</tr>';
+				   </tr>';
 	
-	}	 ?>
+		}	 
+		?>
 		</tbody>
 		
 	</table>

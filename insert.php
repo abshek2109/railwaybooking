@@ -1,5 +1,4 @@
-
-			<?php
+<?php
 	include('connection.php');
 ?>
 
@@ -47,18 +46,11 @@
 
 </body>
 </html>
-
-
-
-
-
 		</div>
 	</form>
 
 </body>
 </html>
-
-
 
 <?php
 

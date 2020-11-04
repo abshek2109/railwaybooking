@@ -5,5 +5,4 @@
  if(!isset($_SESSION['login_user'])){
  	header("location:log.php");
  	 }
-
 ?>
