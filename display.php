@@ -68,9 +68,7 @@ $query = mysqli_query($mysqli, $sql);
 			padding: 7px 17px;
 		}
 		
-		
 
-		/* Table Header */
 		.data-table thead th {
 			background-color: #508abb;
 			color: #FFFFFF;
@@ -140,10 +138,10 @@ $query = mysqli_query($mysqli, $sql);
 					<td>'.$row5['dep_time'].'</td>
 					<td>'.$row5['arrv_time'].'</td>
 					<td>'.$row5['fare'].'</td>
-                 	<td><a href=passenger.php?train='.$row5['train_no'].' >BOOK</a></td>
+                 	<td><a href=passenger.php >BOOK</a></td>
  
 				</tr>';
-	
+	$_SESSION["trainnumber"]=$row5['train_no'];
 		}?>
 		</tbody>
 		

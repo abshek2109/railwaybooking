@@ -1,7 +1,22 @@
 <?php
 include 'session.php';
+include'connection.php';
 
-$trai=$_GET[t];
+  $trai=$_SESSION["trainnumber"];
+  $fullname= $_POST['firstname'];
+  $age= $_POST['age'];
+  $gender= $_POST['Gender'];
+  $pnumber= $_POST['pnumber'];
+
+  $sql =$mysqli->query("INSERT INTO `passenger`(`train_no`,`name`, `age`, `gender`, `cnumber`) VALUES ('$trai','$fullname','$age','$gender','$pnumber')");
+
+  $cname = $_POST['cardname'];
+  $cnumber = $_POST['cardnumber'];
+  $emonth = $_POST['expmonth'];
+  $eyear = $_POST['expyear'];
+  $cvv = $_POST['cvv'];
+
+  $sql = $mysqli->query("INSERT INTO `payment` VALUES ('$trai','$cname','$cnumber','$emonth','$eyear','$cvv')");
 
 $e = "SELECT * FROM passenger where train_no='$trai'";
 $d5 = mysqli_query($mysqli,$e);
@@ -67,36 +82,31 @@ $r3= $d1->fetch_assoc();
 	<form action="" onsubmit="window.print()">
 <table border="3" cellspacing="0" cellpadding="5" align="center">
 
-	<tr><th colspan="2" height="60px"><h1>TICKET DETAILS</h1></th></tr>
+	<tr><th  height="60px"><h1>TICKET DETAILS</h1></th></tr>
 
 
 	<tr>
 
 		<th>TRAIN NUMBER:</th>
-		<td><?php echo "$r3[train_no]"; ?></td>
+		<td><?php echo "$trai"; ?></td>
 
-	</tr>
-		
-	<tr>
-		<th>TRAIN NAME:</th>
-		<td><?php echo "$r3[train_name]"; ?></td>
 	</tr>
 		
 
 	<tr>
 		<th>NAME:</th>
-		<td><?php echo "$r2[name]"; ?></td>
+		<td><?php echo "$cnumber"; ?></td>
 	</tr>
 
 	<tr>
 		<th>GENDER:</th>
-		<td><?php echo "$r2[gender]"; ?></td>
+		<td><?php echo "$gender"; ?></td>
 	</tr>
 
 
 	<tr>
 		<th>AGE:</th>
-		<td><?php echo "$r2[age]"; ?></td>
+		<td><?php echo "$age"; ?></td>
 	</tr>
 
 

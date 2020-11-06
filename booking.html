@@ -9,27 +9,27 @@
 		<img src="blueavatar.jpg" class="img">
 		
 		<h1>Book your Ticket</h1>
-		<form>
+		<form method="POST" action="booking1.php">
 			<p>From</p>
-			<select>
+			<select name="from">
                 <option selected disabled>From</option>
-                <option value="1">Bengaluru</option>
-                <option value="2">Davangere</option>
-                <option value="3">Mysuru</option>
-	          	<option value="4">Hubli</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Davangere">Davangere</option>
+                <option value="Mysuru">Mysuru</option>
+	          	<option value="Hubli">Hubli</option>
             </select><br><br><br>
 
 		  <p>When do you want to Go?</p>
                   <input type="date" name="journey" placeholder="Date of Journey"><br><br><br>
 			<p>To</p>
-			<select>
+			<select name="to">
                   <option selected disabled>To</option>
-                  <option value="1">Bengaluru</option>
-                  <option value="2">Davangere</option>
-                  <option value="3">Mysuru</option>
-	          	  <option value="4">Hubli</option>
+                  <option value="Bengaluru">Bengaluru</option>
+                  <option value="Davangere">Davangere</option>
+                  <option value="Mysuru">Mysuru</option>
+	          	  <option value="Hubli">Hubli</option>
             </select><br><br><br> 
-			<a href="booking1.php"><input type="submit" name="" value= "Search" > </a><br>
+			<input type="submit" name="" value= "Search" ><br>
 		</form>
 	</div>
 </body>

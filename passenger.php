@@ -1,23 +1,3 @@
-<?php
-    
-  include("connection.php");
-  include("session.php");
-  error_reporting(0);
-$trai=$_GET[train];
- 
-if(isset($_POST['submit']))
-{
-    $trai= $_POST['tnumber'];
-  $fullname= $_POST['funame'];
-  $age= $_POST['age'];
-  $gender= $_POST['gender'];
-  $pnumber= $_POST['pnumber'];
-
-  $sql =$mysqli->query("INSERT INTO `passenger`(`train_no`,`name`, `age`, `gender`, `cnumber`) VALUES ('$trai','$fullname','$age','$gender','$pnumber')");
-
-  header("Location:payment.php?t=$trai");
-}
-?>
 
 <!DOCTYPE html>
 <html>
@@ -136,39 +116,59 @@ span.price {
 <div class="row">
   <div class="col-75">
     <div class="container">
-      <form action=""method="POST">
+      <form action="print.php" method="POST">
       
         <div class="row">
           <div class="col-50">
             <h3>Passenger Information</h3>
-
-            <label for="tnum"> Train Number</label>
-            <input type="number" id="tnum" name="tnumber" placeholder="" value="<?php echo $trai?>" readonly="readonly"> <br><br>
-
             <label for="fname"> Full Name</label>
-            <input type="text" id="fname" name="funame" placeholder="Full Name" required>
+            <input type="text" id="fname" name="firstname" placeholder="Full Name">
 
             <label for="age"> Age</label>
-            <input type="number" id="age" name="age" placeholder="Age" required ><br><br>
+            <input type="number" id="age" name="age" placeholder="Age"><br><br>
 
             <label for="gender"> Gender</label>
-            <input type="radio" value="male" name= "gender" required>Male&nbsp&nbsp&nbsp
-            <input type="radio"  value="female" name= "gender" required>Female<br><br>
+            <input type="radio" value="male" name= "Gender">Male&nbsp&nbsp&nbsp
+            <input type="radio" value="female" name= "Gender">Female<br><br>
 
            <label for="number"> Contact Number</label>
-            <input type="number" id="pnumber" name="pnumber" placeholder="Phone Number" required minlength="10" maxlength="10"><br><br>
-          </div>  
+            <input type="number" id="pnumber" name="pnumber" placeholder="Phone Number"><br><br>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" >
+            <label for="ccnum">Credit/Debit Card number</label>
+            <input type="text" id="ccnum" name="cardnumber">
+            <label for="expmonth">Expiry Month</label>
+            <input type="text" id="expmonth" name="expmonth">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Expiry Year</label>
+                <input type="text" id="expyear" name="expyear">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv">
+              </div>
             </div>
           </div>
           
         </div>
         
-        <input type="submit" name="submit" value="Confirm Submit" class="btn">
+        <input type="submit" name="submit" value="Make Payment" class="btn">
       </form>
     </div>
   </div>
   
 </div>
-
 </body>
 </html>
